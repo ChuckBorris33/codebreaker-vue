@@ -1,5 +1,5 @@
 # codebreaker-vue
-Simple codebreaking game written using Vue.js framework
+Simple codebreaking game written using Vue.js framework. You can play it at http://codebreaker.borko.rocks/
 
 ![CodeBreaker screenshot](https://image.ibb.co/k3KPOU/code_Breaker.png)
 
