@@ -1,0 +1,30 @@
+
+// font
+$font: 'VT323', monospace;
+$base-font-size: 3.5vh;
+$heading-font-size: 6.5vh;
+
+// colors
+$dark-blue: #122932;
+$light-blue: #55c1ff;
+$light-yellow: #a3b18a;
+$black: black;
+$white: white;
+$empty: transparent;
+
+$background-color: $dark-blue;
+$primary-color: $light-blue;
+
+//Button
+$button-background: $light-blue;
+$button-text: $dark-blue;
+$button-border-color: $light-yellow;
+$button-font-size: $base-font-size;
+
+//pins
+$pin1-background: #ff0;
+$pin2-background: #f41111;
+$pin3-background: #17c50e;
+$pin4-background: #3320a9;
+$pin5-background: #ff7c00;
+$pin6-background: #c30e74;
