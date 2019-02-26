@@ -5,12 +5,10 @@
 </template>
 
 <script>
-import store from './store'
 import Game from './components/Game'
 
 export default {
   name: 'App',
-  store,
   components: {
     Game
   }

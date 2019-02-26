@@ -1,12 +1,12 @@
 <template>
-  <transition-group
+  <TransitionGroup
     tag="div"
     class="GuessList"
     name="guesses"
   >
     <div
-      v-for="(guessRow, index) in guesses"
-      :key="index"
+      v-for="guessRow in guesses"
+      :key="guessRow.id"
       class="GuessRow"
     >
       <SimplePin
@@ -23,7 +23,7 @@
         />
       </div>
     </div>
-  </transition-group>
+  </TransitionGroup>
 </template>
 
 <script>

@@ -1,6 +1,8 @@
 <template>
   <div class="GameEnd">
-    <div class="GameEnd-resultText">{{ resultText }}</div>
+    <div class="GameEnd-resultText">
+      {{ resultText }}
+    </div>
     <div class="GameEnd-resultCode">
       <template v-if="isGameLost">
         <p>Last guess</p>
@@ -44,12 +46,7 @@ export default {
   computed: {
     ...mapState(['gameState', 'code', 'currentGuess']),
     resultText () {
-      switch (this.gameState) {
-        case GameState.WON:
-          return 'YOU WON'
-        case GameState.LOST:
-          return 'GAME OVER'
-      }
+      return this.isGameLost ? 'GAME OVER' : 'YOU WON'
     },
     isGameLost () {
       return this.gameState === GameState.LOST
@@ -65,6 +62,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 .GameEnd {
   display: flex;
   flex-direction: column;

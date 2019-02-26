@@ -1,8 +1,8 @@
 <template>
-  <div class="GameBoard" >
-    <GuessList/>
-    <CurrentGuess/>
-    <PinOptions/>
+  <div class="GameBoard">
+    <GuessList />
+    <CurrentGuess />
+    <PinOptions />
   </div>
 </template>
 <script>

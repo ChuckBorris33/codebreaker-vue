@@ -1,6 +1,8 @@
 <template>
   <div class="GameHelp">
-    <p class="u-nomargin">Try to guess right pin combination </p>
+    <p class="u-nomargin">
+      Try to guess right pin combination
+    </p>
     <ol>
       <li>
         Drag pins
@@ -14,7 +16,8 @@
           class="u-inline Pin--fontSize"
         />
       </li>
-      <li>Click on Test button
+      <li>
+        Click on Test button
         <BaseButton
           label="Test"
           class="u-cursorNormal u-inline"

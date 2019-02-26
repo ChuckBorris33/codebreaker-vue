@@ -2,9 +2,9 @@
   <div class="CurrentGuess">
     <GuessPin
       v-for="(pin, guessID) in currentGuess"
+      :id="guessID"
       :key="guessID"
       :pin="pin"
-      :id="guessID"
     />
     <div class="CurrentGuess-testButton">
       <BaseButton

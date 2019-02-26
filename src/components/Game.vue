@@ -3,9 +3,9 @@
     ref="game"
     class="Game"
   >
-    <DragShadow/>
+    <DragShadow />
     <GameHeader />
-    <component :is="mainComponent" />
+    <Component :is="mainComponent" />
   </div>
 </template>
 
@@ -43,6 +43,7 @@ export default {
         case GameState.WON:
           return GameEnd
       }
+      return undefined
     }
   },
   mounted () {

@@ -2,8 +2,8 @@
   <div class="PinOptions">
     <OptionPin
       v-for="(pin, id) in pins"
-      :key="id"
       :id="id"
+      :key="id"
       :pin="pin"
     />
   </div>

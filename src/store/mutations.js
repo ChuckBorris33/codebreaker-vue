@@ -1,4 +1,5 @@
 import { generateGame, GameState } from '@/lib/game.js'
+import uuidv4 from 'uuid/v4'
 import Vue from 'vue'
 
 const mutations = {
@@ -21,7 +22,7 @@ const mutations = {
   addGuess (state, payload) {
     state.guesses = [
       ...state.guesses,
-      { guess: state.currentGuess, result: payload.result }
+      { guess: state.currentGuess, result: payload.result, id: uuidv4() }
     ]
     state.currentGuess = [undefined, undefined, undefined, undefined]
   },
