@@ -13,12 +13,12 @@ export const GameState = {
 }
 
 export const pins = [
-  {id: 0, type: 'PIN1'},
-  {id: 1, type: 'PIN2'},
-  {id: 2, type: 'PIN3'},
-  {id: 3, type: 'PIN4'},
-  {id: 4, type: 'PIN5'},
-  {id: 5, type: 'PIN6'}
+  { id: 0, type: 'PIN1' },
+  { id: 1, type: 'PIN2' },
+  { id: 2, type: 'PIN3' },
+  { id: 3, type: 'PIN4' },
+  { id: 4, type: 'PIN5' },
+  { id: 5, type: 'PIN6' }
 ]
 
 export function generateGame (settings) {
@@ -73,7 +73,7 @@ export function evaluateGame (guessCount, lastResult) {
 
 function shuffleArray (array) {
   for (let i = array.length - 1; i > 0; i--) {
-    let j = Math.floor(Math.random() * (i + 1))
+    const j = Math.floor(Math.random() * (i + 1))
     var temp = array[i]
     array[i] = array[j]
     array[j] = temp

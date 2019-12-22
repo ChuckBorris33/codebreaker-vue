@@ -13,7 +13,7 @@ const actions = {
   dropPin ({ commit, state }, dropData) {
     if (state.dragData.dragType === 'guess') {
       // Switching pins
-      let pin = state.currentGuess[dropData.guessId]
+      const pin = state.currentGuess[dropData.guessId]
       commit('guessPin', { pin, guessId: state.dragData.guessId })
     }
     commit('guessPin', { pin: state.dragData.pin, guessId: dropData.guessId })

@@ -55,7 +55,7 @@ export default {
   methods: {
     ...mapMutations(['setGameState']),
     backToSettings () {
-      this.setGameState({gameState: GameState.SETTINGS})
+      this.setGameState({ gameState: GameState.SETTINGS })
     }
   }
 }
