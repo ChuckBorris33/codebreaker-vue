@@ -1,5 +1,5 @@
 import { generateGame, GameState } from '@/lib/game.js'
-import uuidv4 from 'uuid/v4'
+import { v4 as uuidv4 } from 'uuid'
 import Vue from 'vue'
 
 const mutations = {

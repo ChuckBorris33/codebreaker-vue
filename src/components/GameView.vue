@@ -20,7 +20,7 @@ import GameHelp from './GameHelp'
 import DragShadow from './DragShadow'
 
 export default {
-  name: 'Game',
+  name: 'GameView',
   components: {
     GameSettings,
     GameHeader,

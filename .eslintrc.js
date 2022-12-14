@@ -1,10 +1,10 @@
 module.exports = {
   root: true,
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: '@babel/eslint-parser'
   },
   env: {
-    browser: true,
+    browser: true
   },
   extends: [
     // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
@@ -12,7 +12,7 @@ module.exports = {
     'plugin:vue/recommended',
     // https://github.com/standard/standard/blob/master/docs/RULES-en.md
     'standard',
-    "eslint:recommended"
+    'eslint:recommended'
   ],
   // required to lint *.vue files
   plugins: [
